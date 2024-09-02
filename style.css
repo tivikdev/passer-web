@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif, Arial;
+}
+
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-purple: #6a5acd;
+}
+
+main {
+    min-height: 95vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+h1, h2, section {
+    text-align: center;
+    min-height: 3rem;
+}
+
+.box {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 50vh;
+}
+
+    .box.white {
+        background-color: var(--color-white);
+        color: black;
+    }
+
+    .box.purple {
+        background-color: var(--color-purple);
+        color: white;
+    }
+
+        .box.purple a, a {
+            color: white;
+        }
+
+#pros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+    #pros section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--color-black);
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 5vh;
+}
+
+.centerit, .centerit a {
+    text-align: center;
+}
+
+.flexer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/*Font sizes*/
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p, a {
+    font-size: 2rem;
+}
+
+/*Nice Button*/
+:root {
+    --gradient-color-1: var(--color-purple);
+    --gradient-color-2: var(--color-purple);
+}
+
+.button {
+    width: 300px;
+    height: 100px;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    font-size: 32px;
+    background-color: #201E43;
+    position: relative;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+    .button::after {
+        position: absolute;
+        height: 107%;
+        width: 102%;
+        content: '';
+        background-image: linear-gradient(to bottom right, var(--gradient-color-1) 0%, var(--gradient-color-2) 100%);
+        border-radius: 1000px;
+        z-index: -1;
+    }
+
+    .button:hover {
+        z-index: 0;
+    }
