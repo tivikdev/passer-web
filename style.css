@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -30,8 +31,7 @@ h1, h2, section {
 }
 
 .box {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     min-height: 50vh;
 }
 
@@ -79,6 +79,7 @@ footer {
 
 .flexer {
     display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
